@@ -10,7 +10,6 @@ public aspect MyMethodsAspect {
 
     Object around():myMethodsAspect(){
         MethodsRecord methodsRecord = new MethodsRecord();
-        System.out.println("hahah");
         long timeBefore = System.currentTimeMillis();
         Object res = proceed();
         long execTime = System.currentTimeMillis() - timeBefore;
