@@ -1,10 +1,8 @@
 package ua.patlan.lab3.aspect;
-import org.springframework.stereotype.Component;
 import ua.patlan.lab3.Main;
 import ua.patlan.lab3.entity.MethodsRecord;
 import ua.patlan.lab3.service.MethodsRecordService;
 
-@Component
 public aspect MyMethodsAspect {
     pointcut myMethodsAspect():call(public * ua.patlan.lab3.MyMethods.*(..));
 
